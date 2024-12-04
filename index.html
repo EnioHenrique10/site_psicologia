@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Psicologia</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <h1 class="logos">Psicóloga</h1>
+        </a>
+       <button class="menu-toggle" onclick="toggleMenu()">&#9776;</button> 
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#tdah">TDAH</a></li>
+            <li><a href="#ansiedade">Ansiedade</a></li>
+            <li><a href="#depressao">Depressão</a></li>
+            <li><a href="#burnout">Burnout</a></li>
+        </ul>
+    </nav>
+    
+    
+    <section id="inicio" class="hero">
+        <div class="info">
+            <h1>Psicóloga Clínica</h1>
+            <p>CRP: 0000000</p>
+            <p>Encontre um ambiente acolhedor para cuidar de você. Marque sua consulta agora e comece sua jornada de autoconhecimento e bem-estar.</p>
+            <button class="btn" onclick="agendar()">Agende Já!</button>
+        </div>
+        <img src="imgs/IMG_5756-e1636653015795__1_-removebg-preview.png" width="500px" alt="Imagem da Pessoa">
+    </section>
+
+    <div class="arrow-down">
+        <span>&#8595;</span>
+    </div>
+
+    <section class="services">
+        <div class="service">
+            <h3>Online</h3>
+        </div>
+        <div class="service">
+            <h3>Presencial</h3>
+        </div>
+        <div class="service">
+            <h3>Sessão de 50 minutos</h3>
+        </div>
+    </section>
+    
+    <section class="details">
+        <h2>Encontros semanais, quinzenais ou mensais</h2>
+    </section>
+
+    <section class="conditions">
+        <div class="condition" id="tdah">
+            <h3>TDAH</h3>
+            <p>O Transtorno de Déficit de Atenção/Hiperatividade (TDAH) é um padrão persistente de desatenção e/ou hiperatividade-impulsividade.</p>
+            <button class="btn">Saiba Mais</button>
+        </div>
+        <div class="condition" id="ansiedade">
+            <h3>Ansiedade</h3>
+            <p>Agitação, cansaço fácil, dificuldade de concentração, irritabilidade e alterações do sono.</p>
+            <button class="btn">Saiba Mais</button>
+        </div>
+        <div class="condition" id="depressao">
+            <h3>Depressão</h3>
+            <p>Humor deprimido constante, diminuição da energia e perda de interesse em atividades.</p>
+            <button class="btn">Saiba Mais</button>
+        </div>
+        <div class="condition" id="burnout">
+            <h3>Burnout</h3>
+            <p>Esgotamento físico e emocional, cansaço persistente e aumento da irritabilidade.</p>
+            <button class="btn">Saiba Mais</button>
+        </div>
+    </section>
+
+    <section id="sobre">
+        <div class="content">
+            <h2>Prazer em te conhecer.</h2>
+            <p>Olá, meu nome é [Seu Nome]. Sou psicóloga e tenho uma formação sólida e especializada, dedicando minha carreira à compreensão profunda da mente humana. Meu objetivo é ajudar as pessoas a se conhecerem melhor e a alcançarem mais equilíbrio emocional, sempre com base em uma abordagem científica e humanizada.</p>
+            <p>Graduação em Psicologia na Unifacvest</p>
+            <p>Especialização em Neuropsicologia pela Uniritter</p>
+            <p>Atualmente, estou aprofundando meus conhecimentos com uma pós-graduação em Psicologia Clínica no Instituto de Psicologia Baseada em Evidências, com previsão de conclusão em 2026. Minha atuação é pautada pela integração entre neuropsicologia e psicologia clínica, utilizando técnicas baseadas em evidências científicas para oferecer um atendimento personalizado e eficaz.</p>
+        </div>
+        <img src="imgs/IMG_5756-e1636653015795 (1).webp" width="500px" alt="Imagem da Pessoa">
+    </section>
+    
+    <section class="consultation">
+        <h2>Transforme sua vida hoje: agende sua consulta!</h2>
+        <button class="btn">Converse com um psicólogo</button>
+    </section>
+    
+
+    <footer>
+        <section class="faq-section">
+            <h3>Perguntas Frequentes</h3>
+            <div class="faq">
+                <div class="faq-item">
+                    <h4 class="faq-question">Como agendar uma consulta?</h4>
+                    <p class="faq-answer">Você pode agendar uma consulta através do nosso site ou pelo telefone.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Quais os horários disponíveis?</h4>
+                    <p class="faq-answer">Estamos disponíveis de segunda a sexta, das 9h às 18h.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">O que é terapia cognitivo-comportamental?</h4>
+                    <p class="faq-answer">É uma abordagem que ajuda a identificar e mudar padrões de pensamento e comportamento negativos.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Qual é a diferença entre um psicólogo e um psiquiatra?</h4>
+                    <p class="faq-answer">Os psicólogos tratam questões emocionais e comportamentais através da terapia, enquanto os psiquiatras são médicos que podem prescrever medicamentos.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Quais são os benefícios da terapia?</h4>
+                    <p class="faq-answer">A terapia pode ajudar a melhorar a autoestima, gerenciar o estresse, resolver conflitos e oferecer suporte em momentos difíceis.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">A terapia é confidencial?</h4>
+                    <p class="faq-answer">Sim, a confidencialidade é uma parte fundamental da prática da psicologia. Suas informações não serão compartilhadas sem seu consentimento.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Como saber se preciso de terapia?</h4>
+                    <p class="faq-answer">Se você está enfrentando dificuldades emocionais, estresse excessivo ou problemas de relacionamento, pode ser útil considerar a terapia.</p>
+                </div>
+                <div class="faq-item">
+                    <h4 class="faq-question">Com que frequência devo ir à terapia?</h4>
+                    <p class="faq-answer">A frequência das sessões varia de acordo com suas necessidades. Muitas pessoas começam com sessões semanais e, eventualmente, espaçam as visitas.</p>
+                </div>
+            </div>
+
+
+            
+        </section>      
+        <section class="faq-sectio">
+           
+            <div class="faq">
+                <!-- Seu conteúdo de FAQ aqui -->
+            </div>
+        
+        
+        <div class="contact-inf">
+            <p><strong>Endereço:</strong> Rua Exemplo, 123 - Cidade, Estado</p>
+            <p><strong>Telefone:</strong> (00) 1234-5678</p>
+            <p><strong>Email:</strong> contato@exemplo.com</p>
+        </div>
+    
+        <p class="fot">&copy; 2024 DevSitee</p>
+    </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

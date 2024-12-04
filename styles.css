@@ -1,0 +1,491 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #365f5c, #bd7f7e, #e6ddd0);
+    color: #333;
+}
+
+.details {
+    text-align: center;
+}
+
+nav {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; /* Ajuste para manter a logo à esquerda e o menu à direita */
+}
+
+nav a {
+    display: flex; /* Permite que a logo seja flexível */
+    align-items: flex-end; /* Centraliza verticalmente a logo */
+}
+
+.logo {
+    height: 50px; /* Ajuste a altura da logo conforme necessário */
+    
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; 
+    margin: 0;
+    padding: 0;
+}
+
+.menu-toggle {
+    display: none; 
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #365f5c; 
+}
+
+
+
+
+
+
+/* Estilo para a seção de contato */
+.contact-inf {
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-bottom: 1rem; /* Espaçamento abaixo das informações de contato */
+    background-color: #333;
+    color: white;
+}
+
+/* Estilo para o copyright */
+ .fot {
+    margin: 0;
+    text-align: right; /* Alinha o texto à direita */
+    width: 100%; /* Faz o parágrafo ocupar toda a largura do footer */
+}
+
+
+
+/* Responsividade do navbar */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between; /* Mantém logo à esquerda e menu à direita */
+    }
+
+    nav .logo {
+        margin-right: auto; /* Garante que a logo fique à esquerda */
+    }
+
+    nav ul {
+        display: none; /* Oculta o menu por padrão */
+        flex-direction: column; /* Coloca os itens em coluna */
+        position: absolute;
+        top: 100%; 
+        right: 0; 
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        width: 100%; /* Faz o menu ocupar toda a largura */
+        align-items: flex-start; /* Alinha os itens à esquerda */
+        z-index: 999; 
+    }
+
+    nav ul.show {
+        display: flex; /* Mostra o menu quando a classe 'show' é adicionada */
+    }
+
+    nav ul li {
+        padding: 10px 20px; 
+    }
+
+    
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        justify-content: space-between; /* Mantém espaço entre logo e botão de menu */
+    }
+
+    nav ul {
+        display: none; /* Oculta o menu por padrão */
+        flex-direction: column; /* Coloca os itens em coluna */
+        position: absolute;
+        top: 100%; 
+        right: 0; 
+        background: rgba(255, 255, 255, 0.9);
+        padding: 1rem;
+        width: 100%; 
+        align-items: flex-start; /* Ajuste para alinhar os itens à esquerda */
+        z-index: 999; 
+    }
+
+    nav ul.show {
+        display: flex; 
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão de menu */
+    }
+}
+
+/* Estilos do navbar */
+nav {
+    position: fixed; 
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    z-index: 1000; 
+    display: flex; 
+    align-items: center; 
+    justify-content: space-around; 
+}
+
+
+
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem; 
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #365f5c; 
+    font-weight: bold;
+    transition: color 0.3s; 
+}
+
+nav a:hover {
+    color: #bd7f7e; 
+}
+
+/* Estilos para o botão de menu */
+.menu-toggle {
+    display: none; 
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #365f5c; 
+}
+
+/* Centraliza o conteúdo principal */
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 6rem 2rem 2rem; 
+    text-align: center; 
+}
+
+.hero img {
+    margin-top: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+.info {
+    display: flex; 
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.info p {
+    font-size: 1.2rem;
+    color: white;
+}
+
+/* Estilo dos botões */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px; 
+    background-color: #365f5c; 
+    color: #fff; 
+    border: none;
+    border-radius: 5px; 
+    font-size: 1.2rem; 
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+.btn:hover {
+    background-color: #bd7f7e; 
+    transform: translateY(-3px); 
+}
+
+.btn:active {
+    transform: translateY(1px); 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+/* Outras seções permanecem iguais */
+.arrow-down {
+    text-align: center;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+/* Estilos da seção de serviços */
+.services {
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto; 
+    padding: 2rem;
+    max-width: 1200px; 
+}
+
+.service {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%;
+    cursor: pointer;
+}
+
+.service:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+.service h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #365f5c;
+}
+
+/* Estilos da seção de condições */
+.conditions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem 0;
+    padding: 2rem;
+}
+
+.condition {
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 2rem;
+    margin: 1rem 0; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%; 
+    max-width: 800px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.condition:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.condition h3 {
+    font-size: 1.8rem;
+    color: #365f5c;
+    margin-bottom: 1rem;
+}
+
+.condition p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilos para a seção "Sobre" */
+#sobre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 10px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+#sobre .content {
+    max-width: 50%; 
+    margin-right: 2rem; 
+}
+
+#sobre h2 {
+    font-size: 2rem;
+    color: #365f5c;
+    margin-bottom: 1rem;
+}
+
+#sobre p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+}
+
+#sobre img {
+    max-width: 40%; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+.consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    height: 50vh; /* Ocupa toda a altura da tela */
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(20px); /* Movido para baixo */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animação */
+}
+
+.consultation.show {
+    opacity: 1; /* Torna visível */
+    transform: translateY(0); /* Retorna para a posição original */
+}
+
+.consultation h2 {
+    margin: 0 0 20px; /* Margem para o título */
+    text-align: center; /* Centraliza o texto */
+}
+
+.faq-section {
+    margin: 2rem 0;
+}
+
+.faq-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+    transition: background-color 0.3s;
+}
+
+.faq-item:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.faq-question {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.faq-answer {
+    display: none; /* Oculta a resposta por padrão */
+    margin-top: 0.5rem;
+    font-size: 1rem;
+}
+
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav {
+        justify-content: flex-end; 
+    }
+
+  /* Ajustes no nav ul para evitar corte */
+nav ul {
+    list-style: none;
+    display: none; /* Oculta o menu por padrão */
+    flex-direction: column; /* Coloca os itens em coluna */
+    position: absolute;
+    top: 100%; /* Muda para 100% para ficar logo abaixo do navbar */
+    right: 0; /* Alinha à direita */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 1rem;
+    width: 100%; /* Faz o menu ocupar toda a largura */
+    align-items: flex-end; 
+    min-height: 150px; /* Altura mínima para garantir espaço */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+    z-index: 999; /* Garante que fique acima de outros elementos */
+}
+
+
+    nav ul.show {
+        display: flex; /* Mostra o menu quando a classe 'show' é adicionada */
+    }
+
+    nav ul li {
+        padding: 10px 20px; 
+    }
+
+    .menu-toggle {
+        display: block; /* Mostra o botão de menu */
+    }
+
+    #sobre {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    #sobre img {
+        max-width: 100%; 
+        margin-top: 1rem;
+    }
+
+    #sobre .content {
+        max-width: 100%; 
+        margin-right: 0;
+    }
+
+    .condition {
+        width: 90%; 
+    }
+
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service {
+        width: 80%;
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Estilos do footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Estilos para telas maiores */
+@media (min-width: 768px) {
+    .hero {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left; 
+    }
+
+    .info {
+        max-width: 50%; 
+        padding: 2rem; 
+    }
+
+    .hero img {
+        max-width: 45%;
+        margin-left: 20px;
+    }
+}
